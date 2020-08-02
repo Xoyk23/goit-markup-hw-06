@@ -81,7 +81,42 @@
               <b class="modal__invite"
                 >Оставьте свои данные, мы вам перезвоним</b
               >
-              <button data-modal-close>Закрыть</button>
+              <form class="connection" action="">
+                <label
+                  >Имя<input class="connection__input" type="text"
+                /></label>
+                <label
+                  >Телефон<input
+                    class="connection__input"
+                    type="tel"
+                    name="telephone"
+                /></label>
+                <label for=""
+                  >Почта<input
+                    class="connection__input"
+                    type="email"
+                    name="email"
+                /></label>
+                <label for=""
+                  >Комментарий<textarea
+                    class="connection__textarea"
+                    name="comment"
+                    id=""
+                    rows="10"
+                  ></textarea>
+                </label>
+
+                <input type="checkbox" name="" id="" />
+                <label for=""
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a></label
+                >
+                <button class="button" type="submit">Отправить</button>
+              </form>
+
+              <button class="modal__button-close" data-modal-close>
+                Закрыть
+              </button>
             </div>
           </div>
         </div>

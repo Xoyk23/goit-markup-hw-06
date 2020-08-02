@@ -37,6 +37,8 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* обнуление стилей */
+
 h1,
 h2,
 h3,
@@ -47,7 +49,6 @@ p {
   padding: 0;
   margin: 0;
 }
-/* обнуление стилей */
 
 img {
   display: block;
@@ -62,6 +63,14 @@ img {
 }
 .link {
   text-decoration: none;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
   display: block;
 }
 
@@ -329,6 +338,7 @@ header .section {
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
+  width: 528px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -337,6 +347,8 @@ header .section {
 }
 
 .modal__invite {
+  margin-bottom: 30px;
+
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -345,6 +357,41 @@ header .section {
   letter-spacing: 0.03em;
 
   color: var(--primary-title-color);
+}
+
+.connection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.connection__input {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 28px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.connection__textarea {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 28px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Секция преимуществ */
