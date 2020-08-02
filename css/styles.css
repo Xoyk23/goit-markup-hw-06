@@ -257,12 +257,29 @@ header .section {
 } */
 
 .hero .button {
-  padding: 10px 32px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-left: auto;
+  display: block;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   margin-right: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  border-width: 0px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--secondaty-accent-color);
 }
 
 .hero-title {
@@ -827,8 +844,10 @@ b {
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
+  border: 0px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /* Кнопки фильтров */
