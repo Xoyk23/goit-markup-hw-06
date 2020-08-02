@@ -244,7 +244,7 @@ header .section {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  /* text-align: center; */
   /* outline: 1px solid black; */
 
   background-image: linear-gradient(
@@ -257,7 +257,7 @@ header .section {
   background-repeat: no-repeat;
   background-position: center;
 
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* .hero .container {
@@ -283,6 +283,7 @@ header .section {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -349,6 +350,7 @@ header .section {
 .modal__invite {
   margin-bottom: 30px;
 
+  display: block;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -377,21 +379,49 @@ header .section {
   width: 448px;
   height: 120px;
   margin-bottom: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
+.connection__link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .modal__button-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
 
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal__icon {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* интерактивные элементы в модалке */
+
+.modal__button-close:hover .modal__icon,
+.modal__button-close:focus .modal__icon {
+  fill: var(--accent-color);
 }
 
 /* Секция преимуществ */

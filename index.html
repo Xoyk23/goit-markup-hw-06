@@ -83,7 +83,11 @@
               >
               <form class="connection" action="">
                 <label
-                  >Имя<input class="connection__input" type="text"
+                  >Имя<input
+                    class="connection__input"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
                 /></label>
                 <label
                   >Телефон<input
@@ -96,26 +100,37 @@
                     class="connection__input"
                     type="email"
                     name="email"
+                    autocomplete="email"
                 /></label>
-                <label for=""
-                  >Комментарий<textarea
+                <label for="">
+                  <textarea
                     class="connection__textarea"
                     name="comment"
                     id=""
                     rows="10"
+                    placeholder="Комментарий"
                   ></textarea>
                 </label>
+                <label class="checkbox" for="">
+                  <input
+                    class="checbox__input"
+                    type="checkbox"
+                    name=""
+                    id=""
+                  />Соглашаюсь с рассылкой и принимаю
 
-                <input type="checkbox" name="" id="" />
-                <label for=""
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="">Условия договора</a></label
+                  <a class="connection__link" href=""
+                    >Условия договора</a
+                  ></label
                 >
+
                 <button class="button" type="submit">Отправить</button>
               </form>
 
               <button class="modal__button-close" data-modal-close>
-                Закрыть
+                <svg class="modal__icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
               </button>
             </div>
           </div>
