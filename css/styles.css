@@ -383,14 +383,50 @@ header .section {
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .connection__link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-left: 4px;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
   color: var(--accent-color);
-  text-decoration: underline;
+}
+
+.form-field-modal {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.checkbox__input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.checkbox {
+  display: flex;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
 }
 
 .modal__button-close {
