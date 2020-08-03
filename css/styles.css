@@ -408,14 +408,8 @@ header .section {
 }
 
 .checkbox__input {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  margin-right: 8px;
 }
 
 .checkbox {
