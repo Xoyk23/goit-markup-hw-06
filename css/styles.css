@@ -403,8 +403,6 @@ header .section {
   left: 16px;
   transform: translateY(-50%);
   margin-right: 8px;
-
-  background-color: bisque;
 }
 
 .connection__textarea {
@@ -453,6 +451,7 @@ header .section {
 
 .checkbox {
   display: flex;
+  align-items: center;
 
   margin-bottom: 30px;
   padding-left: 20px;
@@ -516,8 +515,16 @@ header .section {
 }
 
 .connection__field:focus-within .connection__icon {
-  background-color: blue;
-  fill: chartreuse;
+  fill: var(--accent-color);
+}
+
+.checkbox__input:checked + .checkbox__custom {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid var(--accent-color);
+  background-position: center;
 }
 
 /* Секция преимуществ */
