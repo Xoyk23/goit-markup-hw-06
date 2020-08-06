@@ -369,10 +369,42 @@ header .section {
 .connection__input {
   width: 448px;
   height: 40px;
-  margin-bottom: 28px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  /* transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.connection__field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.connection__label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  /* font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em; */
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connection__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  margin-right: 8px;
+
+  background-color: bisque;
 }
 
 .connection__textarea {
@@ -401,26 +433,44 @@ header .section {
   color: var(--accent-color);
 }
 
-.form-field-modal {
+/* .form-field-modal {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-}
+} */
 
+/* Чекбокс вижуали хайден */
 .checkbox__input {
-  margin-bottom: 30px;
-  margin-right: 8px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .checkbox {
   display: flex;
 
   margin-bottom: 30px;
+  padding-left: 20px;
 
   font-size: 14px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
+}
+
+.checkbox__custom {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  margin-left: -20px;
+  border: 2px solid var(--main-black-color);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close {
@@ -452,6 +502,22 @@ header .section {
 .modal__button-close:hover .modal__icon,
 .modal__button-close:focus .modal__icon {
   fill: var(--accent-color);
+}
+
+.connection__input:focus-within,
+.connection__textarea:focus-within {
+  outline-color: var(--accent-color);
+}
+
+.connection__field:focus-within > .connection__label,
+.connection__input:not(:placeholder-shown) + .connection__label {
+  color: var(--accent-color);
+  transform: translate(-16px, -42px);
+}
+
+.connection__field:focus-within .connection__icon {
+  background-color: blue;
+  fill: chartreuse;
 }
 
 /* Секция преимуществ */

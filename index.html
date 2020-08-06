@@ -83,27 +83,43 @@
                 >Оставьте свои данные, мы вам перезвоним</b
               >
               <form class="connection" action="">
-                <label
-                  >Имя<input
+                <label class="connection__field"
+                  ><input
                     class="connection__input"
                     type="text"
                     name="name"
-                    autocomplete="name"
+              
                     required
-                /></label>
-                <label
-                  >Телефон<input
+placeholder=" "
+                  />
+                  <span class="connection__label">Имя</span>
+                  <span ><svg class="connection__icon" >
+                  <use href="./images/sprite.svg#icon-facebook"></use></span>
+                </label>
+                <label class="connection__field"
+                  ><input
                     class="connection__input"
                     type="tel"
                     name="telephone"
-                /></label>
-                <label
-                  >Почта<input
+                    placeholder=" "
+                  />
+                  <span class="connection__label">Телефон</span>
+                  <span ><svg class="connection__icon" >
+                  <use href="./images/sprite.svg#icon-facebook"></use></span>
+                </label>
+                <label class="connection__field"
+                  ><input
                     class="connection__input"
                     type="email"
                     name="email"
                     autocomplete="email"
-                /></label>
+                    placeholder=" "
+                    required
+                  />
+                  <span class="connection__label">Почта</span>
+                 <span ><svg class="connection__icon" >
+                  <use href="./images/sprite.svg#icon-facebook"></use></span>
+                </label>
                 <label>
                   <textarea
                     class="connection__textarea"
@@ -114,15 +130,15 @@
                   ></textarea>
                 </label>
                 <div class="form-field-modal">
-                  <input
+                 
+
+                  <label class="checkbox" for=""
+                    >  <input
                     class="checkbox__input"
                     type="checkbox"
                     name="checkbox"
-                    id="checkbox"
-                  />
-
-                  <label class="checkbox" for="checkbox"
-                    >Соглашаюсь с рассылкой и принимаю<a
+                   
+                  /> <span class="checkbox__custom"></span> Соглашаюсь с рассылкой и принимаю<a
                       class="connection__link"
                       href=""
                       >Условия договора</a
