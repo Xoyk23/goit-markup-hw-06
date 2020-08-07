@@ -9,6 +9,10 @@
       rel="stylesheet"
     />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
@@ -77,7 +81,7 @@
             Заказать услугу
           </button>
           <!-- Бэкдроп и Модалка -->
-          <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop  is-hidden "  data-modal>
             <div class="modal">
               <b class="modal__invite"
                 >Оставьте свои данные, мы вам перезвоним</b
@@ -112,7 +116,7 @@ placeholder=" "
                     class="connection__input"
                     type="email"
                     name="email"
-                    autocomplete="email"
+                  
                     placeholder=" "
                     required
                   />
@@ -120,14 +124,15 @@ placeholder=" "
                  <span ><svg class="connection__icon" >
                   <use href="./images/sprite.svg#icon-mail-black"></use></span>
                 </label>
-                <label>
+                <label class="connection__textarea">
                   <textarea
-                    class="connection__textarea"
+                    class="connection__textarea-input"
                     name="comment"
                     id=""
                     rows="10"
-                    placeholder="Комментарий"
+                    placeholder=" "
                   ></textarea>
+                  <span class="connection__label-textarea">Комментарий</span>
                 </label>
                 <div class="form-field-modal">
                  
